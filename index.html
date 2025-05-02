@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Choque - O Herói Elétrico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="energy-bar-container">
+            <div class="energy-bar"></div>
+        </div>
+        <div class="loading-text">Carregando poder...</div>
+    </div>
+
+    <div class="cursor-follower"></div>
+
+    <div class="intro-animation">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Super Choque Logo" class="intro-logo">
+            <div class="lightning-effect"></div>
+        </div>
+        <button class="skip-intro">Pular Intro</button>
+    </div>
+
+    <div class="content-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Super Choque Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero" class="nav-link">Início</a></li>
+                    <li><a href="#about" class="nav-link">Quem é</a></li>
+                    <li><a href="#powers" class="nav-link">Poderes</a></li>
+                    <li><a href="#characters" class="nav-link">Personagens</a></li>
+                    <li><a href="#gallery" class="nav-link">Galeria</a></li>
+                    <li><a href="#timeline" class="nav-link">História</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </div>
+        </header>
+
+        <section id="hero" class="hero-section">
+            <div class="parallax-bg">
+                <div class="city-layer city-back"></div>
+                <div class="city-layer city-mid"></div>
+                <div class="city-layer city-front"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="images/Super-Choque (1).png" alt="Super Choque em ação">
+                    <div class="electric-aura"></div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="animated-title">SUPER CHOQUE</h1>
+                    <p class="tagline">Choque de realidade! Conheça o herói elétrico que conquistou gerações!</p>
+                    <button class="cta-button">
+                        <span>Saiba Mais</span>
+                        <div class="button-electricity"></div>
+                    </button>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Role para baixo</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2 class="section-title">Quem é o Super Choque?</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="identity-switch">
+                        <div class="identity-front">
+                            <img src="images/Virgil Hawkins sc.png" alt="Virgil Hawkins">
+                            <span>Virgil Hawkins</span>
+                        </div>
+                        <div class="identity-back">
+                            <img src="images/suprchoques2.png" alt="Super Choque">
+                            <span>Super Choque</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="about-info">
+                        <h3>Nome real: <span>Virgil Hawkins</span></h3>
+                        <h3>Origem: <span>Cidade fictícia Dakota</span></h3>
+                        <p class="origin-story">
+                            Virgil Hawkins era um adolescente comum até ser exposto a um gás mutagênico durante um protesto. 
+                            O acidente químico, conhecido como "Big Bang", concedeu a ele poderes eletromagnéticos incríveis, 
+                            transformando-o no herói Super Choque.
+                        </p>
+                        <div class="quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Eu vou dar Um choque no seu Sistema"</p>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="powers" class="powers-section">
+            <h2 class="section-title">Poderes e Habilidades</h2>
+            <div class="powers-grid">
+                <div class="power-card">
+                    <div class="power-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Eletricidade Estática</h3>
+                    <p>Capacidade de gerar, controlar e manipular eletricidade estática e campos eletromagnéticos.</p>
+                </div>
+                <div class="power-card">
+                    <div class="power-icon">
+                        <i class="fas fa-compact-disc"></i>
+                    </div>
+                    <h3>Disco Voador</h3>
+                    <p>Usa um disco metálico magnetizado para voar e se locomover rapidamente pela cidade.</p>
+                </div>
+                <div class="power-card">
+                    <div class="power-icon">
+                        <i class="fas fa-magnet"></i>
+                    </div>
+                    <h3>Magnetismo</h3>
+                    <p>Controla objetos metálicos e cria campos magnéticos para defesa e ataque.</p>
+                </div>
+                <div class="power-card">
+                    <div class="power-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Inteligência</h3>
+                    <p>Grande conhecimento científico e criatividade para usar seus poderes de formas inovadoras.</p>
+                </div>
+            </div>
+            <div class="floating-disc">
+                <img src="images/disco.png" alt="Disco voador" >
+            </div>
+        </section>
+
+        <section id="characters" class="characters-section">
+            <h2 class="section-title">Aliados e Inimigos</h2>
+            <div class="character-tabs">
+                <button class="tab-button active" data-tab="allies">Aliados</button>
+                <button class="tab-button" data-tab="enemies">Inimigos</button>
+            </div>
+            <div class="character-content">
+                <div class="tab-content active" id="allies">
+                    <div class="character-cards">
+                        <div class="character-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="images/Gear.png" alt="Gear">
+                                    <h3>Gear</h3>
+                                </div>
+                                <div class="card-back">
+                                    <h3>Richie Foley</h3>
+                                    <p>Melhor amigo de Virgil e gênio da tecnologia. Ganhou super inteligência após exposição ao gás e se tornou o parceiro Gear.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="images/Robert Hawkins.png" alt="Robert Hawkins">
+                                    <h3>Robert Hawkins</h3>
+                                </div>
+                                <div class="card-back">
+                                    <h3>Robert Hawkins</h3>
+                                    <p>Pai de Virgil, conselheiro social e diretor do centro comunitário. Não sabe inicialmente sobre a identidade secreta do filho.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="images/Sharon Hawkins.png" alt="Sharon Hawkins">
+                                    <h3>Sharon Hawkins</h3>
+                                </div>
+                                <div class="card-back">
+                                    <h3>Sharon Hawkins</h3>
+                                    <p>Irmã mais velha de Virgil, estudante universitária. Frequentemente implicante, mas se preocupa com o irmão.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="enemies">
+                    <div class="character-cards">
+                        <div class="character-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="images/ebon.png" alt="Ebon">
+                                    <h3>Ebon</h3>
+                                </div>
+                                <div class="card-back">
+                                    <h3>Ivan Evans</h3>
+                                    <p>Líder da gangue Meta-Breed, com poderes de manipulação de sombras. Um dos principais antagonistas da série.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="images/hotstreak.png" alt="Hotstreak">
+                                    <h3>Hotstreak</h3>
+                                </div>
+                                <div class="card-back">
+                                    <h3>Francis Stone</h3>
+                                    <p>Ex-valentão da escola de Virgil que ganhou poderes de piroquinese. Temperamental e agressivo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="images/ss___talon_by_dcauniverse_df8w0wg-414w.png" alt="Talon">
+                                    <h3>Talon</h3>
+                                </div>
+                                <div class="card-back">
+                                    <h3>Teresa</h3>
+                                    <p>Membro da Meta-Breed com características de ave de rapina, incluindo asas, garras e um grito sônico.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h2 class="section-title">Galeria</h2>
+            <div class="gallery-container">
+                <div class="gallery-controls">
+                    <button class="gallery-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="gallery-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="gallery-wrapper">
+                    <div class="gallery-item">
+                        <img src="images/superacao.avif" alt="Super Choque em ação">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/superchoqueemacao.jpg" alt="Super Choque e Gear">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-3.jpg" alt="Cena da série animada">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/superchoquecontrahan.jpg" alt="Super Choque vs Hotstreak">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/SUPERchoqueeLIGADAJUSTICA.webp" alt="Super Choque na Liga da Justiça">
+                    </div>
+                </div>
+                <div class="video-container">
+                    <h3>Abertura Original</h3>
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TBnsZlU2H6s?si=0VL-4r5Wl38UUt36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="timeline-section">
+            <h2 class="section-title">Linha do Tempo</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="margin-top: 35px;"></div>
+                    <div class="timeline-date">1993</div>
+                    <div class="timeline-content" style="top: 35px;">
+                        <h3>Primeira Aparição</h3>
+                        <p>Estreia nos quadrinhos da DC Comics como parte da linha Milestone Comics.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" style="margin-top: 35px;">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2000</div>
+                    <div class="timeline-content" style="top: 35px;">
+                        <h3>Série Animada</h3>
+                        <p>Estreia da série animada "Super Choque" na Kids' WB, trazendo o herói para uma nova geração.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" style="margin-top: 35px;">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2003</div>
+                    <div class="timeline-content" style="top: 35px;">
+                        <h3>Crossover com Liga da Justiça</h3>
+                        <p>Super Choque aparece em episódios da Liga da Justiça, interagindo com Superman e Batman.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" style="margin-top: 35px;">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2004</div>
+                    <div class="timeline-content"style="top: 35px;">
+                        <h3>Fim da Série</h3>
+                        <p>A série animada chega ao fim após 4 temporadas e 52 episódios.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" style="margin-top: 35px;">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-content" style="top: 35px;">
+                        <h3>Rumores de Live-Action</h3>
+                        <p>Anúncios de desenvolvimento de um filme live-action do Super Choque pela Warner Bros.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="facts" class="facts-section">
+            <h2 class="section-title">Curiosidades</h2>
+            <div class="facts-container">
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-user-edit"></i>
+                    </div>
+                    <h3>Criador</h3>
+                    <p>Criado por Dwayne McDuffie, um dos fundadores da Milestone Media, empresa focada em diversidade nos quadrinhos.</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Premiações</h3>
+                    <p>A série ganhou o Daytime Emmy Award por "Outstanding Special Class Animated Program" em 2004.</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Representatividade</h3>
+                    <p>Um dos primeiros super-heróis negros adolescentes a ter sua própria série animada, sendo um marco na representatividade.</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Impacto Cultural</h3>
+                    <p>Abordou temas sociais importantes como racismo, violência urbana e preconceito de forma acessível para o público jovem.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Compartilhe sua Nostalgia</h2>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" placeholder="Seu nome">
+                        <div class="input-electricity"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Seu e-mail">
+                        <div class="input-electricity"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="favorite">Episódio Favorito</label>
+                        <input type="text" id="favorite" placeholder="Qual seu episódio favorito?">
+                        <div class="input-electricity"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" placeholder="Compartilhe sua memória favorita do Super Choque"></textarea>
+                        <div class="input-electricity"></div>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <span>Enviar</span>
+                        <div class="button-electricity"></div>
+                    </button>
+                </form>
+                <div class="contact-image">
+                    <img src="images/superchoquee.png" alt="Super Choque">
+                </div>
+            </div>
+        </section>
+
+        <div class="audio-player">
+            <button class="play-theme">
+                <i class="fas fa-play"></i>
+                <i class="fas fa-pause"></i>
+            </button>
+            <div class="audio-text">Tema da Série</div>
+            <audio id="theme-song" src="audio/WhatsApp Audio 2025-04-30 at 22.34.29.mp4" preload="auto"></audio>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Super Choque Logo">
+                </div>
+                <div class="footer-links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="https://www.dccomics.com/" target="_blank">DC Comics</a></li>
+                        <li><a href="https://www.warnerbros.com/" target="_blank">Warner Bros</a></li>
+                        <li><a href="https://www.cartoonnetwork.com.br/" target="_blank">Cartoon Network</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Esta é uma página de fãs. Super Choque e todos os personagens relacionados são propriedade da DC Comics e Warner Bros.</p>
+                <p>&copy; 2025 Fã Site Super Choque. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
